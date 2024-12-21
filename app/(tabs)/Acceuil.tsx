@@ -6,8 +6,10 @@ import { SafeAreaView, View, ScrollView } from "react-native";
 
 export default function Acceuil() {
     return(
-        <View className="bg-[#dfe3ee] h-full w-full">
-          <SafeAreaView className=" h-full w-full flex flex-col">
+      <SafeAreaView className="bg-[#dfe3ee] h-full w-full">
+
+          <ScrollView className=" bg-[#dfe3ee] h-full w-full flex flex-col">
+            
             <View className=" bg-white h-48 w-full flex flex-col px-2 pt-8">
              <HeaderApp></HeaderApp>
              <FaireUnPoste></FaireUnPoste>
@@ -17,13 +19,14 @@ export default function Acceuil() {
                  <StoriReel></StoriReel>
             </View>
 
-            <ScrollView className="bg-white mt-2 h-full flex flex-col px-2 pt-8">
-
-              <ContenuePublication></ContenuePublication>
+            <ScrollView className="bg-[#dfe3ee] mt-2 flex flex-col pt-1">
+              
+                <ContenuePublication></ContenuePublication>
 
             </ScrollView>
-
-          </SafeAreaView>
-        </View>
+           
+          </ScrollView>
+       
+        </SafeAreaView>
     )
 };

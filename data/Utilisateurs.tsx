@@ -10,6 +10,7 @@ interface Utilisateur{
     commentaires?: string;
     likes?: number;
     partages?: number;
+    nombreCommentaire?:number;
 }
 
 
@@ -22,7 +23,8 @@ const utilisateurs: Utilisateur[] = [
         imagesPoste:"https://i.pinimg.com/736x/1b/88/a0/1b88a0e79d12dc87bdfcfab2ddc9b353.jpg",
         commentaires:"merci a tous",
         likes:459,
-        partages:12
+        partages:12,
+        nombreCommentaire:19
     },
 
     {
@@ -36,6 +38,7 @@ const utilisateurs: Utilisateur[] = [
         commentaires: "Inspirant!",
         likes: 765,
         partages: 34,
+        nombreCommentaire:1
       },
       {
         id: 3,
@@ -48,6 +51,7 @@ const utilisateurs: Utilisateur[] = [
         commentaires: "Bravo!",
         likes: 234,
         partages: 18,
+        nombreCommentaire:3
       },
       {
         id: 4,
@@ -60,6 +64,7 @@ const utilisateurs: Utilisateur[] = [
         commentaires: "Appétissant!",
         likes: 128,
         partages: 4,
+        nombreCommentaire:14
       },
       {
         id: 5,
@@ -120,6 +125,7 @@ const utilisateurs: Utilisateur[] = [
         commentaires: "Exactement!",
         likes: 803,
         partages: 47,
+        nombreCommentaire:20
       },
       {
         id: 10,
@@ -144,6 +150,7 @@ const utilisateurs: Utilisateur[] = [
         commentaires: "Merci pour ce rappel.",
         likes: 548,
         partages: 30,
+        nombreCommentaire:198
       },
       {
         id: 12,

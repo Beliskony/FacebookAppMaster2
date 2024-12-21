@@ -8,7 +8,7 @@ const Story = () => {
             {/*story pour CurrentUser*/}
           <TouchableOpacity className='h-72 ml-2'>
             <ImageBackground source={{uri:('https://i.pinimg.com/736x/f6/57/f2/f657f2d92b7f4f4ad441c97afba51504.jpg')}} 
-            className='h-60 w-36 rounded-xl justify-end mx-4 border overflow-hidden'>
+            className='h-60 w-36 rounded-xl justify-end mx-4 border-[0.5px] overflow-hidden '>
                 <View className='h-1/4 w-full bg-white items-center justify-end'>
                    <Text className='text-wrap text-black  text-2xl text-center w-36'>Creer une story</Text>
                 </View>

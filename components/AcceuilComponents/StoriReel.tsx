@@ -6,7 +6,7 @@ import Reel from './storyEtReel/Reel';
 const StoriReel = () => {
     const [selectionOnglet, setSelectionOnglet] = useState(1);
 
-    // Fonction pour choisir le contenu selon l'onglet actif
+    
     const choixOnglet = () => {
         switch (selectionOnglet) {
             case 1:
