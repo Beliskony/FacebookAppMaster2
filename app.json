@@ -7,7 +7,6 @@
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
-    
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
@@ -33,7 +32,13 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      [
+      "expo-video",{
+        "supportsBackgroundPlayback": true,
+        "supportsPictureInPicture": true
+      }
+    ]
     ],
     "experiments": {
       "typedRoutes": true

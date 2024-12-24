@@ -37,7 +37,7 @@ export default function TabLayout() {
       />
 
       <Tabs.Screen
-        name="Video"
+        name="VideoS"
         options={{
           title: 'Video',
           tabBarIcon: ({ color }) => <MaterialIcons size={28} name="ondemand-video" color={color} />,

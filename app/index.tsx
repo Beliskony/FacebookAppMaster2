@@ -4,7 +4,7 @@ import CreerCompte from "@/components/loginAndSignIn/CreerCompte";
 import Fbicone from "@/components/loginAndSignIn/Fbicone";
 import LoginBouton from "@/components/loginAndSignIn/loginBouton";
 import MDPOublier from "@/components/loginAndSignIn/MDPOublier";
-import { View, Text } from "react-native";
+import { View } from "react-native";
 
 
 export default function HomeScreen() {
