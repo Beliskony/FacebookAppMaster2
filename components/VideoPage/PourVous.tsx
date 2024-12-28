@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyleSheet, View, TouchableOpacity, Text, Image } from 'react-native';
+import { View, TouchableOpacity, Text, Image } from 'react-native';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import utilisateurs from '@/data/Utilisateurs';
-import { useVideoPlayer, VideoPlayer, VideoView } from 'expo-video';
+import { useVideoPlayer, VideoView } from 'expo-video';
 import { useEvent } from 'expo';
 
 const PourVous = () => {
