@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, TouchableOpacity, Text, Image } from 'react-native';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import utilisateurs from '@/data/Utilisateurs';
@@ -6,14 +6,21 @@ import { useVideoPlayer, VideoView } from 'expo-video';
 import { useEvent } from 'expo';
 
 const PourVous = () => {
+    const [activeVideo, setActiveVideo] = useState< number | null>(null);
     return (
         <>
             {utilisateurs.map((User, index) => {
                 const player = useVideoPlayer(User.videoPoste ||"", player => {
                     player.loop = true;
                     player.play();
+                    if (index === activeVideo){
+                        player.play();
+                    }else{
+                        player.pause();
+                    }
                 });
                 const { isPlaying } = useEvent(player, 'playingChange', { isPlaying: player.playing });
+                
 
                 return (
                     <View key={index} className="flex flex-col my-1 bg-white w-full items-center px-2">
