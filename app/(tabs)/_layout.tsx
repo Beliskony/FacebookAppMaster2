@@ -2,9 +2,9 @@ import { Tabs } from 'expo-router';
 import React from 'react';
 import { Platform } from 'react-native';
 import '../../global.css'
+import { View,Image } from 'react-native';
 
 import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
@@ -72,7 +72,12 @@ export default function TabLayout() {
         name="Menu"
         options={{
           title: 'menu',
-          tabBarIcon: ({ color }) => <MaterialIcons size={28} name="menu" color={color} />,
+          tabBarIcon: ({ color }) =>(
+            <View className=' items-end h-10 w-10 '>   
+              <Image className='rounded-full h-9 w-9 object-cover bg-black opacity-90' source={{uri:'https://i.pinimg.com/474x/8e/71/25/8e71254c516399d90325aa44aebbf973.jpg'}}/>
+              <MaterialIcons size={17} name="menu" color='white' className='absolute mt-5 ml-4 bg-gray-600 rounded-full' />
+            </View>
+        ),
         }}
       />
     </Tabs>
